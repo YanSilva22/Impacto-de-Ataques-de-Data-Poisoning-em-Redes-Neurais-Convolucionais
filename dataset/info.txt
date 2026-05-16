@@ -1,0 +1,43 @@
+====================================================
+DATASETS GERADOS AUTOMATICAMENTE
+====================================================
+
+Esta pasta será criada e preenchida automaticamente
+pelos scripts do projeto.
+
+====================================================
+O QUE SERÁ GERADO
+====================================================
+
+dataset/
+├── train_70/
+└── retrain_30/
+
+====================================================
+FUNÇÃO DE CADA DATASET
+====================================================
+
+train_70
+→ utilizado para:
+- treinamento inicial
+- criação do modelo base
+
+retrain_30
+→ utilizado para:
+- retreinamento
+- aplicação dos ataques de data poisoning
+
+====================================================
+COMO GERAR
+====================================================
+
+Execute o script responsável pela separação
+do dataset em 70% e 30%. split_dataset
+
+O script irá:
+- criar as pastas
+- copiar imagens
+- copiar labels
+- separar os conjuntos automaticamente
+
+====================================================

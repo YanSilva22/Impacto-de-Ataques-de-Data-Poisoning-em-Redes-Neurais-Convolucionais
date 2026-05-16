@@ -1,0 +1,60 @@
+====================================================
+DATASETS ENVENENADOS
+====================================================
+
+Esta pasta armazenará os datasets contaminados
+gerados automaticamente pelos scripts do projeto.
+
+====================================================
+O QUE SERÁ GERADO
+====================================================
+
+poison/
+├── retrain_30_poison_0/
+├── retrain_30_poison_5/
+├── retrain_30_poison_10/
+└── retrain_30_poison_20/
+
+====================================================
+SIGNIFICADO DOS DATASETS
+====================================================
+
+poison_0
+→ dataset limpo
+→ utilizado como baseline
+
+poison_5
+→ 5% das labels alteradas
+
+poison_10
+→ 10% das labels alteradas
+
+poison_20
+→ 20% das labels alteradas
+
+====================================================
+TIPO DE ATAQUE
+====================================================
+
+O projeto utiliza:
+
+Label Flipping Attack
+
+O ataque altera apenas:
+- labels (.txt)
+
+As imagens NÃO são modificadas.
+
+====================================================
+COMO GERAR
+====================================================
+
+Execute o script responsável pela criação
+dos datasets contaminados. create_poisoned_datasets
+
+O script irá:
+- copiar o dataset retrain_30
+- aplicar poisoning
+- gerar logs automaticamente
+
+====================================================

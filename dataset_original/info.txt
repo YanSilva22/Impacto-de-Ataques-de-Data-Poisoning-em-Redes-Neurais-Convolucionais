@@ -1,0 +1,37 @@
+====================================================
+DATASET ORIGINAL
+====================================================
+
+Esta pasta deve conter o dataset original utilizado
+nos experimentos.
+
+Estrutura esperada:
+
+dataset_original/
+├── images/
+│   └── train/
+└── labels/
+    └── train/
+
+====================================================
+COMO OBTER O DATASET
+====================================================
+
+1. Baixe o dataset utilizado no projeto
+2. Extraia os arquivos
+3. Coloque as pastas:
+   - images
+   - labels
+
+dentro desta pasta.
+
+====================================================
+IMPORTANTE
+====================================================
+
+O dataset original NÃO deve ser alterado.
+
+Todos os experimentos utilizam cópias geradas
+automaticamente pelos scripts do projeto.
+
+====================================================
