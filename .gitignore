@@ -3,14 +3,21 @@
 # MAS MANTÉM TXT
 # ==================================================
 
-dataset/*
+dataset/**
+!dataset/
 !dataset/*.txt
 
-dataset_original/*
+dataset_original/**
+!dataset_original/
 !dataset_original/*.txt
 
-poison/*
+poison/**
+!poison/
 !poison/*.txt
+
+defense/**
+!defense/
+!defense/*.txt
 
 # ==================================================
 # IGNORA LOGS COMPLETAMENTE

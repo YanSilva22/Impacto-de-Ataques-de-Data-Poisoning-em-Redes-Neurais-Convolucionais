@@ -1,0 +1,63 @@
+====================================================
+DEFENSE
+====================================================
+
+Esta pasta contém os resultados do sistema
+de defesa contra Data Poisoning.
+
+O algoritmo utiliza um modelo YOLO treinado
+com dados limpos para validar as labels
+dos datasets contaminados.
+
+====================================================
+OBJETIVO
+====================================================
+
+Detectar possíveis labels suspeitas antes
+do retreinamento do modelo.
+
+O sistema compara:
+
+- label do dataset
+vs
+- inferência realizada pela IA
+
+====================================================
+FUNCIONAMENTO
+====================================================
+
+Se a IA concordar com a label:
+-> approved_images
+
+Se a IA discordar da label:
+-> suspicious_images
+
+====================================================
+IMPORTANTE
+====================================================
+
+A defesa NÃO altera imagens.
+
+Ela apenas:
+- analisa
+- compara
+- separa arquivos suspeitos
+
+====================================================
+ESTRUTURA
+====================================================
+
+defense/
+├── approved_images
+├── suspicious_images
+└── logs
+
+====================================================
+OBSERVAÇÃO
+====================================================
+
+Esta abordagem assume a existência
+de um modelo previamente treinado
+com dados confiáveis.
+
+====================================================
